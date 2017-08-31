@@ -1,0 +1,96 @@
+{
+  "_from": "strapi-plugin-settings-manager@alpha",
+  "_id": "strapi-plugin-settings-manager@3.0.0-alpha.5.5",
+  "_inBundle": false,
+  "_integrity": "sha512-bU9KkyRGuYrXDqkfEYpuUeIXgG14Z52BCp987798O9SK5lTxmfUXKVycpxUh+4jHVHRCkOXXEeMr9RJNJ0KY8g==",
+  "_location": "/strapi-plugin-settings-manager",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "strapi-plugin-settings-manager@alpha",
+    "name": "strapi-plugin-settings-manager",
+    "escapedName": "strapi-plugin-settings-manager",
+    "rawSpec": "alpha",
+    "saveSpec": null,
+    "fetchSpec": "alpha"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/strapi-plugin-settings-manager/-/strapi-plugin-settings-manager-3.0.0-alpha.5.5.tgz",
+  "_shasum": "d9969006884150ed0dff78a60e756ed9bb3486c8",
+  "_spec": "strapi-plugin-settings-manager@alpha",
+  "_where": "F:\\code\\NMTG\\strapi-test\\cutstream",
+  "author": {
+    "name": "Strapi team",
+    "email": "hi@strapi.io",
+    "url": "http://strapi.io"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
+    "flag-icon-css": "^2.8.0",
+    "koa-send": "^4.1.0",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-select": "^1.0.0-rc.5",
+    "react-transition-group": "^1.2.0",
+    "reactstrap": "^4.8.0"
+  },
+  "deprecated": false,
+  "description": "Strapi plugin to manage settings.",
+  "devDependencies": {
+    "cross-env": "^3.1.3",
+    "eslint": "^3.9.0",
+    "eslint-config-airbnb": "^12.0.0",
+    "eslint-config-airbnb-base": "^9.0.0",
+    "eslint-config-prettier": "^2.3.0",
+    "eslint-import-resolver-webpack": "^0.6.0",
+    "eslint-plugin-babel": "^4.1.2",
+    "eslint-plugin-import": "^2.0.1",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.4.1",
+    "eslint-plugin-redux-saga": "^0.1.5",
+    "plop": "^1.5.0",
+    "prettier": "^1.5.3",
+    "rimraf": "^2.5.4",
+    "strapi-helper-plugin": "3.0.0-alpha.5.5",
+    "webpack": "^2.1.0-beta.25"
+  },
+  "engines": {
+    "node": ">= 7.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "Strapi team",
+      "email": "hi@strapi.io",
+      "url": "http://strapi.io"
+    }
+  ],
+  "name": "strapi-plugin-settings-manager",
+  "scripts": {
+    "analyze": "node node_modules/strapi-helper-plugin/lib/internals/scripts/analyze.js",
+    "analyze:clean": "rimraf stats.json",
+    "build": "cross-env NODE_ENV=production webpack --config node_modules/strapi-helper-plugin/lib/internals/webpack/webpack.prod.babel.js --color -p --progress",
+    "build:clean": "rimraf admin/build",
+    "generate": "node_modules/plop/plop.js --plopfile node_modules/strapi-helper-plugin/lib/internals/generators/index.js",
+    "lint": "eslint --ignore-path .gitignore --config node_modules/strapi-helper-plugin/lib/internals/eslint/.eslintrc.json admin",
+    "postinstall": "node node_modules/strapi-helper-plugin/lib/internals/scripts/postinstall.js",
+    "preanalyze": "npm run analyze:clean",
+    "prebuild": "npm run build:clean && npm run test",
+    "prepublish": "npm run build",
+    "pretest": "npm run lint",
+    "prettier": "prettier --single-quote --trailing-comma es5 --write \"{admin,__{tests,mocks}__}/**/*.js\"",
+    "start": "cross-env NODE_ENV=development node node_modules/strapi-helper-plugin/lib/server",
+    "test": "echo Tests are not implemented."
+  },
+  "strapi": {
+    "name": "Settings Manager",
+    "icon": "wrench",
+    "description": "Description of settings-manager plugin."
+  },
+  "version": "3.0.0-alpha.5.5"
+}
